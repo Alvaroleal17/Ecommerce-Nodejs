@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commers</title>
+    <link rel="icon" type="image/x-icon" href="Img/logo2.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Menú-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:3000/inicio"
+          ><img src="Img/logo2.png" alt="" height="60" width="65"
+        /></a>
+        <button
+          class="navbar-toggler me-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://localhost:3000/inicio"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/inicio">
+                <strong>
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  <sup id="car"></sup>
+                  Comprar
+                </strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fin Menú-->
+    <!--Pagos-->
+      <br />
+      <br />
+      <main class="pago">
+        <form id="form_pago">
+          <div class="row">
+            <div class="col">
+              <h4 class="mb-3 text-center">Ingrese sus datos</h4>
+
+              <hr class="my-4" />
+
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="Ingrese su nombre"
+                      name="nombre"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Se requiere un nombre válido.
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Ingrese su apellido"
+                      name="apellido"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Se requiere un apellido válido.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label"
+                      >Correo Electronico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="hola@ejemplo.com"
+                    />
+                    <div class="invalid-feedback">
+                      Ingrese una dirección de correo electrónico válida.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address" class="form-label">Dirreción</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      name="direccion"
+                      placeholder="Cl. 123 #12c-12"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Por favor introduzca su direccion de envio.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">Pago</h4>
+
+                <div class="my-3">
+                  <div class="form-check">
+                    <input
+                      id="credit"
+                      name="credito"
+                      type="checkbox"
+                      class="form-check-input"
+                      checked
+                      required
+                    />
+                    <label class="form-check-label" for="credit"
+                      >Tarjeta Crédito</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="debit"
+                      name="debito"
+                      type="checkbox"
+                      class="form-check-input"
+                      required
+                    />
+                    <label class="form-check-label" for="debit"
+                      >Tarjeta Débito</label
+                    >
+                  </div>
+                </div>
+
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label"
+                      >Nombre en la tarjeta</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-name"
+                      name="titular"
+                      placeholder=""
+                      required
+                    />
+                    <small class="text-muted"
+                      >Nombre completo como se muestra en la targeta</small
+                    >
+                    <div class="invalid-feedback">
+                      Se requiere nombre en la tajerta.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label"
+                      >Número de la tarjeta</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-number"
+                      name="tarjeta"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Se requiere número de la tarjeta.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label"
+                      >Expiración</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-expiration"
+                      name="expiracion"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Fecha de vencimiento requerida.
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-cvv"
+                      name="CVV"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Código de seguridad requerido.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <button
+                  class="w-100 btn btn-warning btn-lg"
+                  id="btn-pagar"
+                >
+                  Pagar
+                </button>
+              </form>
+            </div>
+          </div>
+        </form>
+      </main>
+      <!--Fin sección Pagos-->
+
+      <!--Gracias-->
+      <div class="container text-center" id="gracias">
+        <h1>¡Gracias por su compra!</h1>
+        <br />
+        <br />
+        <h3>Tus productos te llegaron en las proximas horas</h3>
+        <br />
+        <br />
+        <a href="http://localhost:3000/inicio">
+          <h2 class="w-100 btn btn-warning btn-lg" id="volver" type="submit">
+            volver
+          </h2>
+        </a>
+      </div>
+      <!--Fin Gracias-->
+
+      <!--Inicio Footer-->
+      <br />
+      <br />
+      <br />
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022 CestaDorada</p>
+        <ul class="list-inline">
+          <li class="list-inline-item text-warning">Privacidad</li>
+          <li class="list-inline-item text-warning">Términos</li>
+          <li class="list-inline-item text-warning">Soporte</li>
+        </ul>
+      </footer>
+      <!--Fin Footer-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

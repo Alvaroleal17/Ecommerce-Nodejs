@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commers</title>
+    <link rel="icon" type="image/x-icon" href="Img/logo2.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Menú-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"
+          ><img src="Img/logo2.png" alt="" height="60" width="65"
+        /></a>
+        <button
+          class="navbar-toggler me-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active logo" aria-current="page" href="#"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-productos" href="#">
+                <strong>
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  <sup id="car"></sup>
+                  Comprar
+                </strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fin Menú-->
+
+    <!--Productos-->
+    <main class="container" id="productos">
+      <br />
+      <h1 class="text-center">Productos</h1>
+      <hr />
+      <div class="bg-light p-5 rounded">
+        <div class="container">
+          <div class="row">
+
+            
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_fresa">
+                <a href="">
+                  <img
+                    src="Img/Productos/fresa.png"
+                    class="card-img-top"
+                    alt="fresa"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Fresa</h5>
+                  <h3 class="text-center text-success">$ 1.500</h3>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_manzana">
+                <a href="">
+                  <img
+                    src="Img/Productos/manzana.png"
+                    class="card-img-top"
+                    alt="manzana"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Manzana Verde</h5>
+                  <h3 class="text-center text-success">$ 3.000</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_pollo">
+                <a href="">
+                  <img
+                    src="Img/Productos/pechuga.png"
+                    class="card-img-top"
+                    alt="pechuga"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Pechuga de Pollo</h5>
+                  <h3 class="text-center text-success">$ 22.000</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_carne">
+                <a href="">
+                  <img
+                    src="Img/Productos/murillo.png"
+                    class="card-img-top"
+                    alt="carne"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Carne de res</h5>
+                  <h3 class="text-center text-success">$ 12.000</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_pan">
+                <a href="">
+                  <img
+                    src="Img/Productos/baguette.png"
+                    class="card-img-top"
+                    alt="manzana"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Pan Bagguette</h5>
+                  <h3 class="text-center text-success">$ 5.000</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_oreo">
+                <a href="">
+                  <img
+                    src="Img/Productos/oreo.png"
+                    class="card-img-top"
+                    alt="galletas"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Paquete Galletas Oreo</h5>
+                  <h3 class="text-center text-success">$ 7.000</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_helado">
+                <a href="">
+                  <img
+                    src="Img/Productos/ron con pasas.png"
+                    class="card-img-top"
+                    alt="helado"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Helado Ron con Pasas</h5>
+                  <h3 class="text-center text-success">$ 20.000</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-move m-2 item" id="img_cerveza">
+                <a href="">
+                  <img
+                    src="Img/Productos/corona.png"
+                    class="card-img-top"
+                    alt="cerveza"
+                  />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">Cerveza Corona</h5>
+                  <h3 class="text-center text-success">$ 25.000</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Fin sección productos-->
+
+    <!--Detalle de Productos-->
+
+    <!--Primer Producto-->
+    <div class="container page" id="producto_fresa">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/fresa.png"
+              id="img_fresa"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_fresa">Fresa x500gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Hecho con las mejor calidad en frutas y excelente fuente de
+                vitamina para brindarle a tu cuerpo.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_fresa">1500</span> (gr a $ 3,0)
+              </p>
+              <hr class="my-4" />
+
+              <a href="#" class="btn btn-warning btn-lg btn_ingresar" id="fresa"
+                >Comprar
+              </a>
+              <input class="ms-4" id="cantidad_fresa" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Segundo Producto-->
+    <div class="container page" id="producto_manzana">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/manzana.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_manzana">Manzana x500gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Disfruta de las frutas más frescas e increíbles con la manzana
+                verde.<br />
+                Perfecta para batidos , ensaladas o puedes comerla sola.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_manzana">3000</span> (gr a $ 6,0)
+              </p>
+              <hr class="my-4" />
+
+              <a
+                href="#"
+                class="btn btn-warning btn-lg btn_ingresar"
+                id="manzana"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_manzana" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Tercero Producto-->
+    <div class="container page" id="producto_pollo">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/pechuga.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_pechuga">Pechuga de pollo x1400gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Prepara deliciosas recetas con la Pechuga de pollo campesino
+                marinado con su autentico sabor.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_pechuga">22000</span> (gr a $ 17,0)
+              </p>
+              <hr class="my-4" />
+
+              <a
+                href=""
+                class="btn btn-warning btn-lg btn_ingresar"
+                id="pechuga"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_pechuga" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cuarto Producto-->
+    <div class="container page" id="producto_carne">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/murillo.png"
+              class="img-fluid rounded-start"
+              alt="carne"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_carne">Murillo sin hueso x500gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Crea deliciosas recetas con la carne de res, ideales para
+                compartir agradables momentos con tu familia y amigos.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_carne">12000</span> (gr a $ 24,0)
+              </p>
+              <hr class="my-4" />
+
+              <a href="" class="btn btn-warning btn-lg btn_ingresar" id="carne"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_carne" type="number" min="1" value="1" style="width: 50px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Quinto Producto-->
+    <div class="container page" id="producto_pan">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/baguette.png"
+              class="img-fluid rounded-start"
+              alt="pan"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_pan">Pan Bagguette x315gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Disfruta de un exquisito y fresco pan para compartir en familia.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_pan">5000</span> (gr a $ 15,8)
+              </p>
+              <hr class="my-4" />
+
+              <a href="" class="btn btn-warning btn-lg btn_ingresar" id="pan"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_pan" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Sexto Producto-->
+    <div class="container page" id="producto_galleta">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/oreo.png"
+              class="img-fluid rounded-start"
+              alt="oreo"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_galleta">Galletas Oreo x430gr</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Las galletas Oreo son perfectas para sumergir en leche​.
+                Galletas de chocolate rellenas con crema Oreo sabor a
+                Vainilla.<br />​Las galletas son ideales para fiestas, reuniones
+                y recetas.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_galleta">7000</span> (gr a $ 20,2)
+              </p>
+              <hr class="my-4" />
+
+              <a
+                href=""
+                class="btn btn-warning btn-lg btn_ingresar"
+                id="galleta"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_galleta" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Séptimo Producto-->
+    <div class="container page" id="producto_helado">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="Img/Productos/ron con pasas.png"
+              class="img-fluid rounded-start"
+              alt="helado"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_helado">Helado de Ron con Pasas x600gr </h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                Producto 100% natural, saborizados con frutas e ingredientes
+                naturales, no contiene aditivos, ni preservativos.<br />Materias
+                primas nacionales e importadas, cuidadosamente seleccionadas.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_helado">20000</span> (gr a $ 33,3)
+              </p>
+              <hr class="my-4" />
+
+              <a href="" class="btn btn-warning btn-lg btn_ingresar" id="helado"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_helado" type="number" min="1" value="1" style="width: 50px;" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Octavo Producto-->
+    <div class="container page" id="producto_cerveza">
+      <br />
+      <br />
+      <div class="card" style="max-width: 2000px">
+        <h1 class="card-text pt-4 ms-5">Detalle de Producto</h1>
+        <hr class="my-4" />
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img 
+              src="Img/Productos/corona.png"
+              class="img-fluid rounded-start"
+              alt="cerveza"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre_cerveza">Cerveza Corona x6und x355ml</h2>
+              <h4 class="card-text">Características principales:</h4>
+              <p class="card-text text-muted">
+                La Cerveza Corona es perfecta para cualquier ocasión, ya sea
+                para un almuerzo familiar o salir a tomar un poco con tu parche
+                de amigos.
+              </p>
+              <p class="card-text text-success">
+                $ <span id="precio_cerveza">25000</span> (ml a $ 70,0)
+              </p>
+              <hr class="my-4" />
+
+              <a
+                href=""
+                class="btn btn-warning btn-lg btn_ingresar"
+                id="cerveza"
+                >Comprar</a
+              >
+              <input class="ms-4" id="cantidad_cerveza" min="1" value="1" type="number" style="width: 50px;" name="cantidad">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin de sección Productos-->
+
+    <!--Tabla de Articulos-->
+    <section id="tablaProductos">
+      <br />
+      <br />
+      <h1 class="h1 mb-3 fw-normal text-center">Productos seleccionados</h1>
+      <table id="miTabla" class="table table-hover">
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th></th>
+        </tr>
+      </table>
+      <h2 class="btn btn-success">Total: $ <label id="total"></label></h2>
+      <br />
+      <br />
+      <br />
+      <a href="http://localhost:3000/pagos">
+        <h2 class="btn btn-lg btn-warning w-100">
+          Pagar<label id="total"></label>
+        </h2>
+      </a>
+
+      <!--Fin Tabla de Articulos-->
+
+      
+    </section>
+    <section id="mensaje_carrito">
+      <br>
+      <br>
+      <div class="container text-center">
+        <h1>No tienes ningún producto en la cesta</h1>
+      </div>
+    </section>
+    <!--Fin Tabla de Articulos-->
+    <!--Inicio Footer-->
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2022 CestaDorada</p>
+      <ul class="list-inline">
+        <li class="list-inline-item text-warning">Privacidad</li>
+        <li class="list-inline-item text-warning">Términos</li>
+        <li class="list-inline-item text-warning">Soporte</li>
+      </ul>
+    </footer>
+    <!--Inicio Footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

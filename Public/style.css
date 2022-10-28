@@ -1,0 +1,19 @@
+body {
+  padding-top: 4.5rem;
+  font-family: 'Kanit', sans-serif;
+  
+}
+.pagar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.page{
+  display: none;
+}
+.card{
+  box-shadow: -10px 5px 10px rgb(205, 204, 204);
+  transition: top ease 0.5s;
+}
+.card-move:hover{
+  top: -50px;
+}
