@@ -1,7 +1,9 @@
-var express = require("express");
-var app = express();
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+require("dotenv").config();
+
 
 //Configurar el bodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -11,9 +13,7 @@ app.use(express.static("Public"));
 
 //Mongoose
 mongoose
-  .connect(
-    "mongodb+srv://alvaro_0817:A65708589l@cluster0.cbh2tqk.mongodb.net/Supermercado?retryWrites=true&w=majority"
-  )
+  .connect(process.env.STRING_CONEXION)
   .then(function (db) {
     console.log("Conectado a la base de datos");
   })
@@ -23,45 +23,45 @@ mongoose
 //Modelo de datos
 
 //Productos
-var Produc = require("./models/productos");
 
 //Compras
-var Compr = require("./models/compras");
+const Compr = require("./models/compras");
 
 //Pagos
-var Pagos = require("./models/pagos");
+const Pagos = require("./models/pagos");
 
 
 //Rutas
 
-//Vista de Inicio
-app.get("/inicio", async function (req, res) {
+//Home
+app.get("/", async function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
-//Fin
 
-//Vista de Pagos
+
+//Payments
 app.get("/pagos", async function (req, res) {
-  var documentos = await Pagos.find();
+  let documentos = await Pagos.find();
   console.log(documentos);
   res.sendFile(__dirname + "/pagos.html");
 });
+
 app.post("/pagos", async function (req, res) {
-  var datos_ajax = req.body;
-  var p = new Pagos(datos_ajax);
+  let datos_ajax = req.body;
+  let p = new Pagos(datos_ajax);
   await p.save();
   res.send(p);
 });
 
-//Comprar
+//To buy
 app.post("/compra", async function (req,res){
-  var datos = req.body;
-  var p = new Compr(datos);
+  let datos = req.body;
+  let p = new Compr(datos);
   await p.save();
   console.log(p);
 
   
-  var tabla = "<tr>";
+  let tabla = "<tr>";
   tabla += "<td>"+ p.producto +"</td>";
   tabla += "<td>"+ p.precio +"</td>";
   tabla += "<td>"+ p.cantidad +"</td>";
@@ -70,12 +70,13 @@ app.post("/compra", async function (req,res){
  
   res.send(tabla)
 });
+
 //Delete
 app.delete("/compra/:id", async function (req, res) {
-  var parametro = req.params.id;
+  let parametro = req.params.id;
   console.log("Documento eliminado: " + parametro);
 
-  var p = await Compr.findById(parametro);
+  let p = await Compr.findById(parametro);
   await p.remove();
   res.send(p);
 });

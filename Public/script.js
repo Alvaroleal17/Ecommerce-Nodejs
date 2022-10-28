@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var carrito_vacio = true;
+  let carrito_vacio = true;
   //Ocultar Tabla de productos en el inico de pagina
   $(function () {
     $("#tablaProductos").hide();
@@ -87,8 +87,7 @@ $(document).ready(function () {
 
   //Fin detalles de productos
 
-  //Mostrar "Gracias por su compra"
-
+  //Mostrar msg
   $(function () {
     $(".pago").show();
     $("#gracias").hide();
@@ -103,9 +102,9 @@ $(document).ready(function () {
   //Mostrar Tabla Productos
   $(".btn-productos").on("click", function (e) {
     e.preventDefault();
-    if(carrito_vacio){
-      $("#mensaje_carrito").show()
-    }else{
+    if (carrito_vacio) {
+      $("#mensaje_carrito").show();
+    } else {
       $("#tablaProductos").show();
     }
     $("#productos").hide();
@@ -123,7 +122,7 @@ $(document).ready(function () {
   //Datos de pago
   $("#btn-pagar").click(function (e) {
     e.preventDefault();
-    var datos = $("#form_pago").serialize();
+    const datos = $("#form_pago").serialize();
     $.ajax({
       url: "/pagos",
       type: "POST",
@@ -136,10 +135,10 @@ $(document).ready(function () {
   //Fin Datos de pago
 
   //Acción Botón Comprar
-  var rta = 0;
+  let rta = 0;
   $(".btn_ingresar").click(function (e) {
     e.preventDefault();
-    var p = $(this).attr("id");
+    const p = $(this).attr("id");
     console.log(p);
     $.ajax({
       url: "/compra",
@@ -152,8 +151,8 @@ $(document).ready(function () {
       success: function (respuesta) {
         $("#miTabla").append(respuesta);
 
-        var total = $("#precio_" + p).text();
-        var cantidad = $("#cantidad_" + p).val();
+        const total = $("#precio_" + p).text();
+        const cantidad = $("#cantidad_" + p).val();
         rta += parseInt(total) * parseInt(cantidad);
 
         carrito_vacio = false;
@@ -170,10 +169,8 @@ $(document).ready(function () {
             url: "/compra/" + $(this).attr("id"),
             type: "delete",
             success: function (respuesta) {
-              rta -= respuesta.precio
+              rta -= respuesta.precio;
               $("#total").text(rta);
-
-              console.log(respuesta);
             },
           });
         });
